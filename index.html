@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" action="form.php">
+        <fieldset class="sec1">
+            <legend>présentation personnele</legend>
+            <div>
+                <label for="nom">votre nom:</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div>
+                <label for="prenom">votre prénom:</label>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+            <div>
+                <label for="email">votre email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="age">votre âge:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div>
+                <label for="tel"> votre numéro de telephone:</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+            <div>
+                <input type="radio" id="h" name="sexe" value="homme">
+                <label for="h">Homme</label>
+                <input type="radio" id="f" name="sexe" value="femme">
+                <label for="f">Femme</label>
+            </div>
+            <div>
+                <label for="pays">pays de residences:</label>
+                <select id="pays" name="pays">
+                    <optgroup label="europe">
+                        <option value="france">france</option>
+                        <option value="allemand">allemand</option>
+                        <option value="belgique">belgique</option>
+                    </optgroup>
+                    <optgroup label="amerique">
+                        <option value="brazil">brazil</option>
+                        <option value="cuba">cuba</option>
+                        <option value="argentine">argentine</option>
+                    </optgroup>
+                    <optgroup label="affrique">
+                        <option value="comores">comores</option>
+                        <option value="madagascar">madagascar</option>
+                        <option value="egypt">egypt</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="sec2">
+            <legend>competance/experience</legend>
+            <div>
+                <input type="checkbox" id="html" name="competance" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" id="css" name="competance" value="css">
+                <label for="css">css</label>
+                <input type="checkbox" id="php" name="competance" value="php">
+                <label for="php">php</label>
+            </div>
+            <div>
+                <textarea name="exp" placeholder="decrivez une experience pro"></textarea> 
+            </div>
+        </fieldset>
+        <fieldset class="sec3">
+            <legend>validation</legend>
+            <div>
+                <label for="paa">votre mot de passe</label>
+                <input type="password" id="paa" name="aa">
+            </div>
+            <div>
+                <input type="submit" value="send">
+            </div>
+        </fieldset>
+    </form> 
+</body>
+</html>
